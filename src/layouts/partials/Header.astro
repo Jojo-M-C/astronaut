@@ -124,21 +124,11 @@ const { pathname } = Astro.url;
             href="/search"
             aria-label="search"
           >
-            <IoSearch />
           </a>
         )
       }
       <ThemeSwitcher className="mr-5" />
-      {
-        navigation_button.enable && (
-          <a
-            class="btn btn-outline-primary btn-sm hidden lg:inline-block"
-            href={navigation_button.link}
-          >
-            {navigation_button.label}
-          </a>
-        )
-      }
+
     </div>
   </nav>
 </header>
